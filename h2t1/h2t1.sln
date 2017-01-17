@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "h2t1", "h2t1\h2t1.csproj", "{EDA07C14-B44D-44F8-9DA0-24BAC5DB0109}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "h2t2", "h2t2\h2t2.csproj", "{209A414B-3F68-4CF4-934E-E664A6ADBAD5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{EDA07C14-B44D-44F8-9DA0-24BAC5DB0109}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDA07C14-B44D-44F8-9DA0-24BAC5DB0109}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDA07C14-B44D-44F8-9DA0-24BAC5DB0109}.Release|Any CPU.Build.0 = Release|Any CPU
+		{209A414B-3F68-4CF4-934E-E664A6ADBAD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{209A414B-3F68-4CF4-934E-E664A6ADBAD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{209A414B-3F68-4CF4-934E-E664A6ADBAD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{209A414B-3F68-4CF4-934E-E664A6ADBAD5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
