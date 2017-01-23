@@ -14,12 +14,12 @@ namespace h2t5
             int[] taulukko2 = { 2, 10, 44, 6, 8 };
 
 
-            int[] result = taulukko1.ToList().Concat(taulukko2.ToList()).ToArray(); // näin voi yhdistää kaksi taulukkoa T:stackoverflow
+            int[] result = taulukko1.ToList().Concat(taulukko2.ToList()).ToArray(); // näin voi yhdistää kaksi taulukkoa concatin avulla.
             Array.Sort(result);
 
 
             
-                foreach (int res in result) // tulostetaan taulukko 
+                foreach (int res in result) // tulostetaan taulukko foreachilla
                 {
                      
                     Console.WriteLine(res);

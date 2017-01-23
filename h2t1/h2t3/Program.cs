@@ -13,7 +13,7 @@ namespace h2t3
             int luku = 0;
             Console.WriteLine("Anna rivimäärä > ");
             luku = int.Parse(Console.ReadLine());
-            luku = luku - 2;
+            luku = luku - 2; // jalalle jätetään tilaa
 
 
 

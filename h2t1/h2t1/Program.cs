@@ -18,10 +18,10 @@ namespace h2t1
             }
             int summa = 0;
             Array.Sort(pisteet);
-            for (int i = 1; i < pisteet.Length - 1; i++)
+            for (int i = 1; i < pisteet.Length - 1; i++) // alusta otetaan yhdet ja lopusta pois sorttauksen jälkeen
             {
 
-               summa += (pisteet[i]);
+               summa += (pisteet[i]); // lisää itseensä pisteet
                
             }
 
