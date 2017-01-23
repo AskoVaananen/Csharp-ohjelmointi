@@ -11,7 +11,7 @@ namespace h2t6
         static void Main(string[] args)
 
         {
-            Console.WriteLine("Anna merkkijono: >"); // karvalakkimalli
+            Console.WriteLine("Anna merkkijono: >"); 
             string original = Console.ReadLine(); //otetaan merkkijono talteen
             StringBuilder temp = new StringBuilder(); // alustetaan väliaikainen merkkijono josta poistetaan merkkejä joten voi katsoa onko jokin lause palindromi.
             foreach (char x in original)
