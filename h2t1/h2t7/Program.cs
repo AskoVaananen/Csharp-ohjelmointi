@@ -9,48 +9,48 @@ namespace h2t7
     {
         static void Main(string[] args)
         {
-            Random random = new Random((int)DateTime.Now.Ticks); // randomin alustus
+            Random random = new Random((int)DateTime.Now.Ticks); // randomin alustus, valitsee randomin jotenkin ajan mukaan
 
-            string[] sanat = { "apina", "kissa", "koira", "hevonen", "hiiri", "sika" }; // sanat jota pelissä arvataan
+            string[] sanat = { "apina", "kissa", "koira", "hevonen", "hiiri", "sika","orava","KÄÄRME" }; // sanat jota pelissä arvataan
 
-            string arvattava_sana = sanat[random.Next(0, sanat.Length)]; //Valitsee randomin sanan valmiista listasta
+            string arvattava_sana = sanat[random.Next(0, sanat.Length)]; //Valitsee randomin sanan valmiista listasta "sanat"
             
 
-            StringBuilder sanan_naytto = new StringBuilder(arvattava_sana.Length); // 
-            for (int i = 0; i < arvattava_sana.Length; i++)
+            StringBuilder sanan_naytto = new StringBuilder(arvattava_sana.Length); // tekee randomi sanasta alussa piilotetun "_" merkeillä
+            for (int i = 0; i < arvattava_sana.Length; i++) // yhtä monta alaviivaa kuin randomisanassa
                 sanan_naytto.Append('_');
 
-            List<char> oikein_arvatut = new List<char>();
-            List<char> vaarin_arvatut = new List<char>();
+            List<char> oikein_arvatut = new List<char>(); // tähän listaan tulee oikein arvatut kirjaimet
+            List<char> vaarin_arvatut = new List<char>(); // tähän listaan tulee väärin arvatut kirjaimet
 
             int lives = 5; // viisi arvausta
-            bool won = false; // alussa false
+            bool won = false; // alussa false 
             int oikeinarvatut = 0; //
 
-            string input;
-            char guess;
+            string input; // syöte jota pelaaja laittaa eli kirjain
+            char guess; // guessi on inputin syöte jota siitä tulee
 
             while (!won && lives > 0)
             {
                 Console.Write("Guess a letter: ");
 
-                input = Console.ReadLine().ToUpper();
-                guess = input[0];
+                input = Console.ReadLine().ToLower(); // muuttaa syötetyn kirjaimen pieneksi
+                guess = input[0]; // inputin ensimmäinen kirjain
 
-                if (oikein_arvatut.Contains(guess))
+                if (oikein_arvatut.Contains(guess)) // jos arvaa uudestaan saman kirjaimen joka oikein
                 {
                     Console.WriteLine("You've already tried '{0}', and it was correct!", guess);
                     continue;
                 }
-                else if (vaarin_arvatut.Contains(guess))
+                else if (vaarin_arvatut.Contains(guess)) // jos arvaa uudestaan saman kirjaimen joka on väärin
                 {
                     Console.WriteLine("You've already tried '{0}', and it was wrong!", guess);
                     continue;
                 }
 
-                if (arvattava_sana.Contains(guess))
+                if (arvattava_sana.Contains(guess)) // jos arvattavassa sanassa on arvattu kirjain
                 {
-                    oikein_arvatut.Add(guess);
+                    oikein_arvatut.Add(guess); // lisätään oikein arvattujen listaan arvattu kirjain
 
                     for (int i = 0; i < arvattava_sana.Length; i++)
                     {
@@ -62,7 +62,7 @@ namespace h2t7
                     }
 
                     if (oikeinarvatut == arvattava_sana.Length)
-                        won = true;
+                        won = true; //boolean value winwinwinwin
                 }
                 else
                 {
