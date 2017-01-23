@@ -22,7 +22,7 @@ namespace h2t6
             }
             else
             {
-                Console.Write("Ei ole palindromi!");
+                Console.WriteLine("Ei ole palindromi!");
                 Console.ReadLine();
             } 
         }
