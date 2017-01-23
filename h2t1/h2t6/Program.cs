@@ -9,22 +9,38 @@ namespace h2t6
     class Program
     {
         static void Main(string[] args)
-        
+
         {
             Console.WriteLine("Anna merkkijono: >"); // karvalakkimalli
             string original = Console.ReadLine(); //otetaan merkkijono talteen
-            string reversed = new string(original.Reverse().ToArray()); // käännetään merkkijono toiseen jonoon tarkistusta varten
-            if (original == reversed) // jos on sama
+            StringBuilder temp = new StringBuilder(); // alustetaan väliaikainen merkkijono josta poistetaan merkkejä joten voi katsoa onko jokin lause palindromi.
+            foreach (char x in original)
+
             {
-                
-                Console.WriteLine("Palindromi!" + " " + reversed);
-                Console.ReadLine(); 
+                if ( (x >= 'a' && x <= 'z')) // "Tavalliset" merkit määritetty
+
+                {
+                    temp.Append(x); // lisää kaikki tavalliset merkit alkuperäisestä väliaikaiseen merkkijonoon
+                }
             }
-            else
-            {
-                Console.WriteLine("Ei ole palindromi!");
-                Console.ReadLine();
-            } 
+            string muutettu_jono = temp.ToString(); // väliaikainen jono merkkijonoon "muutettu_jono" josta on siis poistettu kaikki ylimääräinen
+
+
+                    string reversed = new string(muutettu_jono.Reverse().ToArray()); // käännetään merkkijono toiseen jonoon tarkistusta varten
+
+                    if (muutettu_jono == reversed) // jos on sama
+                    {
+
+                        Console.WriteLine("Palindromi!" + " " + reversed);
+                        Console.ReadLine();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Ei ole palindromi!");
+                        Console.ReadLine();
+                    }
+                }
+            }
         }
-    }
-}
+    
+
