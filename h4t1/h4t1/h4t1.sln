@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "h4t1", "h4t1\h4t1.csproj", "{00BFCE51-C188-4408-B405-8CD550756913}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "h4t3", "h4t3\h4t3.csproj", "{B02DAB2F-CAD7-4900-9F78-F307E235F3AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00BFCE51-C188-4408-B405-8CD550756913}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00BFCE51-C188-4408-B405-8CD550756913}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00BFCE51-C188-4408-B405-8CD550756913}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00BFCE51-C188-4408-B405-8CD550756913}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B02DAB2F-CAD7-4900-9F78-F307E235F3AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B02DAB2F-CAD7-4900-9F78-F307E235F3AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B02DAB2F-CAD7-4900-9F78-F307E235F3AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B02DAB2F-CAD7-4900-9F78-F307E235F3AF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
