@@ -50,7 +50,7 @@ namespace h3t6
             Console.WriteLine("- Artist : " + Artist);
             Console.WriteLine("- Cd Name : " + CdName);
             Console.WriteLine("- Genre : " + Genre);
-            Console.WriteLine("- Price : " + Price);
+            Console.WriteLine("- Price : " + Price + "$");
            
 
 
@@ -72,7 +72,7 @@ namespace h3t6
 
         public override string ToString()
         {
-            return "Artist: " + Artist + "\n Name: " + CdName + "\nGenre: " + Genre + "\nPrice: " + Price + "\nSongs:\n";
+            return "Artist: " + Artist + "\nName: " + CdName + "\nGenre: " + Genre + "\nPrice: " + Price + " $" + "\nSongs:";
 
         }
     }
