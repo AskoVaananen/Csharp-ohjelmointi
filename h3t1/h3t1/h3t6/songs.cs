@@ -35,5 +35,11 @@ namespace h3t6
             Console.WriteLine("--- Name: " + Name + " " + "-" + " " + Time);
             
         }
+
+        public override string ToString()
+        {
+            return "---Name: " + Name + "\nTime: " + Time;
+
+        }
     }
 }

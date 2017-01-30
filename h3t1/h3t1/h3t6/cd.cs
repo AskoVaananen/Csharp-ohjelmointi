@@ -37,6 +37,7 @@ namespace h3t6
             get;
             set;
         }
+       
 
        
 
@@ -72,7 +73,8 @@ namespace h3t6
 
         public override string ToString()
         {
-            return "Artist: " + Artist + "\nName: " + CdName + "\nGenre: " + Genre + "\nPrice: " + Price + " $" + "\nSongs:";
+            return "Artist: " + Artist + "\nName: " + CdName + "\nGenre: " + Genre + "\nPrice: " + Price + " $" + "\nSongs: ";
+             
 
         }
     }
