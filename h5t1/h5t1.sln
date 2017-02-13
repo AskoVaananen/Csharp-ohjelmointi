@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "h5t3_uusi", "h5t3_uusi\h5t3
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "h5t3", "h5t3\h5t3.csproj", "{6C142760-9769-41A2-8954-890CFB1D5788}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "h5t2", "h5t2\h5t2.csproj", "{3C891989-6271-40FB-8E0A-3ABA3790B8FF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{6C142760-9769-41A2-8954-890CFB1D5788}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C142760-9769-41A2-8954-890CFB1D5788}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C142760-9769-41A2-8954-890CFB1D5788}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C891989-6271-40FB-8E0A-3ABA3790B8FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C891989-6271-40FB-8E0A-3ABA3790B8FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C891989-6271-40FB-8E0A-3ABA3790B8FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C891989-6271-40FB-8E0A-3ABA3790B8FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
