@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="h6t4.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:h6t4"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBox x:Name="LTextBox" HorizontalAlignment="Left" Margin="1066,128,0,0" TextWrapping="Wrap" Text="2500" VerticalAlignment="Top"/>
+        <TextBox x:Name="HTextBox" HorizontalAlignment="Left" Margin="1066,180,0,0" TextWrapping="Wrap" Text="1250" VerticalAlignment="Top"/>
+        <TextBox x:Name="WTextBox" HorizontalAlignment="Left" Margin="1066,236,0,0" TextWrapping="Wrap" Text="45" VerticalAlignment="Top"/>
+        <Button x:Name="LaskeButton" Content="Laske" HorizontalAlignment="Left" Margin="1066,306,0,0" VerticalAlignment="Top" Click="LaskeButton_Click"/>
+        <TextBox x:Name="WindowAreaTextBox" HorizontalAlignment="Left" Margin="1059,381,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" RenderTransformOrigin="-0.028,0.453"/>
+        <TextBox x:Name="ClassAreaTextBox" HorizontalAlignment="Left" Margin="1059,443,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top"/>
+        <TextBox x:Name="CircleTextBox" HorizontalAlignment="Left" Margin="1059,507,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" RenderTransformOrigin="0.528,-1.328"/>
+        <TextBlock x:Name="LTextBlock" HorizontalAlignment="Left" Margin="868,128,0,0" TextWrapping="Wrap" Text="Ikkunan Leveys (L):" VerticalAlignment="Top"/>
+        <TextBlock x:Name="HTextBlock" HorizontalAlignment="Left" Margin="868,192,0,0" TextWrapping="Wrap" Text="Ikkunan Korkeus (H):" VerticalAlignment="Top"/>
+        <TextBlock x:Name="WTextBlock" HorizontalAlignment="Left" Margin="868,248,0,0" TextWrapping="Wrap" Text="Karmipuun Leveys (W):" VerticalAlignment="Top" RenderTransformOrigin="-0.056,0.2"/>
+        <TextBlock x:Name="PintaAlaTextBlock" HorizontalAlignment="Left" Margin="868,381,0,0" TextWrapping="Wrap" Text="Ikkunan pinta-ala:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="LasinAlaTextBlock" HorizontalAlignment="Left" Margin="868,443,0,0" TextWrapping="Wrap" Text="Lasin pinta-ala" VerticalAlignment="Top"/>
+        <TextBlock x:Name="KarminPiiriTextBlock" HorizontalAlignment="Left" Margin="868,507,0,0" TextWrapping="Wrap" Text="Karmin piiri:" VerticalAlignment="Top"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="300" Margin="93,192,0,0" VerticalAlignment="Top" Width="578" Source="window.png"/>
+
+    </Grid>
+</Page>
