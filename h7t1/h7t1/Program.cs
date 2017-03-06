@@ -8,6 +8,11 @@ namespace h7t1
 {
     class Program
     {
+        /* 
+         Muokkaa tehtävää 3 harjoitukset 6:ssa niin että työntekijät pystytään tallentamaan erikseen tiedostoon listauksen ja lisäämisen lisäksi, tallennetut henkilöt pitää pystyä
+         myös lukemaan tiedostosta erikseen. Pääohjelmassa tekstipohjainen käyttöliittymä kaikkiin toimintoihin.
+         
+        */
         static void Main(string[] args)
         {
             Yritys henkilot = new Yritys();
@@ -15,7 +20,7 @@ namespace h7t1
             while (true)
             {
                 int valikko = 0;
-                Console.WriteLine("1. Palkkaa. 2. Erota. 3. Listaa 0. Lopeta:");
+                Console.WriteLine("1. Palkkaa. 2. Erota. 3. Listaa 4. Tallenna henkilöt 5. Tulosta tallennetut henkilöt 0. Lopeta:");
                 Console.WriteLine("Give a selection");
                 bool status = int.TryParse(Console.ReadLine(), out valikko);
 
@@ -44,6 +49,18 @@ namespace h7t1
 
                         Console.WriteLine("List all employees");
                         henkilot.PrintData();
+                        break;
+
+                    case 4:
+                        
+                        Console.WriteLine("Save all employees");
+                        henkilot.TallennaHenkilo();
+                        break;
+
+                    case 5:
+
+                        Console.WriteLine("Print saved employees");
+                        henkilot.TulostaHenkilo();
                         break;
 
                 }
