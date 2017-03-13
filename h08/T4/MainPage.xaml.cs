@@ -25,6 +25,7 @@ namespace T4
         public MainPage()
         {
             this.InitializeComponent();
+            // click events for every button.
             oneButton.Click += button_Click;
             twoButton.Click += button_Click;
             threeButton.Click += button_Click;
@@ -40,19 +41,19 @@ namespace T4
 
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
+        private void button_Click(object sender, RoutedEventArgs e)  // Click event handling, add chars to screenBox
         {
-            double check = double.Parse(screenBox.Text);
+            double check = double.Parse(screenBox.Text); // for checking content of screenbox
             if (check == 0) // checking if theres 0 and remove it
             {
                 screenBox.Text = "";
             }
-            string buttonString = (((Button)sender).Content).ToString();
-            screenBox.Text += buttonString;
+            string buttonString = (((Button)sender).Content).ToString(); // get buttoncontent
+            screenBox.Text += buttonString; // add button Content string to screenBox
         }
 
         private void backButton_Click(object sender, RoutedEventArgs e)
-        { // removing characters and put 0 if theres no characters left
+        { // removing last character and put 0 if theres no characters left
             string value = screenBox.Text;
             value = value.Remove(value.Length - 1);
             if (value.Length == 0)
@@ -69,7 +70,7 @@ namespace T4
         private void okButton_Click(object sender, RoutedEventArgs e)
         {
             heater kiuas = new heater(); // new kiuas from heater.cs
-            if ((bool)radioTempButton.IsChecked) // when temperature is clicked
+            if ((bool)radioTempButton.IsChecked) // when temperature radiobutton is active
             {
                 try
                 {
@@ -86,15 +87,17 @@ namespace T4
                     infoscreenBlock.Text = "Ei ole numero!"; // print to infobox
 
                 }
-                finally
-                {
+                /*
+               finally
+               {
 
-                }
+               }
+               */
 
 
             }
 
-            if ((bool)radioHumButton.IsChecked) // when humidity is clicked
+            if ((bool)radioHumButton.IsChecked) // when humidityradio is active
             {
                 try
                 {
@@ -111,10 +114,12 @@ namespace T4
                     infoscreenBlock.Text = "Ei ole numero!";
 
                 }
+                /*
                 finally
                 {
 
                 }
+                */
 
 
             }
