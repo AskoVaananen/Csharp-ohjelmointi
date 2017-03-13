@@ -25,8 +25,19 @@ namespace T4
         public MainPage()
         {
             this.InitializeComponent();
-            
-        
+            oneButton.Click += button_Click;
+            twoButton.Click += button_Click;
+            threeButton.Click += button_Click;
+            fourButton.Click += button_Click;
+            fiveButton.Click += button_Click;
+            sixButton.Click += button_Click;
+            sevenButton.Click += button_Click;
+            eightButton.Click += button_Click;
+            nineButton.Click += button_Click;
+            zeroButton.Click += button_Click;
+            dotButton.Click += button_Click;
+
+
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
