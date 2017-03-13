@@ -67,8 +67,8 @@
         </RelativePanel>
         <RadioButton x:Name="radioTempButton" Content="Temperature" Grid.Column="1" HorizontalAlignment="Left" Height="29" Margin="40,11,0,0" Grid.Row="5" VerticalAlignment="Top" Width="12"/>
         <RadioButton x:Name="radioHumButton" Grid.ColumnSpan="2" Content="Humidity" Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="165,11,0,-61" Grid.Row="5" VerticalAlignment="Top"/>
-        <TextBlock x:Name="heaterBlock" Foreground="Brown" FontSize="90" FontFamily="comic sans ms" HorizontalAlignment="Left" Margin="112,0,0,0" TextWrapping="Wrap" Text="HEATER" VerticalAlignment="Top" Height="110" Grid.RowSpan="3" Width="378"/>
-        <TextBlock x:Name="ultimatumBlock" Foreground="Brown" FontSize="40" FontFamily="comic sans ms" HorizontalAlignment="Left" Margin="289,15,0,0" TextWrapping="Wrap" Text="ultimatum" VerticalAlignment="Top" Height="59" Grid.RowSpan="2" Width="201" Grid.Row="2"/>
+        <TextBlock x:Name="heaterBlock" Foreground="Brown" FontSize="82" FontFamily="comic sans ms" HorizontalAlignment="Left" Margin="115,0,0,0" TextWrapping="Wrap" Text="Harviapro" VerticalAlignment="Center" Height="110" Grid.RowSpan="3" Width="378"/>
+        <TextBlock x:Name="ultimatumBlock" Foreground="Brown" FontSize="35" FontFamily="comic sans ms" HorizontalAlignment="Left" Margin="289,15,0,0" TextWrapping="Wrap" Text="Heaters gonna heat" VerticalAlignment="Top" Height="95" Grid.RowSpan="3" Width="201" Grid.Row="2"/>
         <TextBlock x:Name="temperatureBlock" Foreground ="yellow" FontSize="25" Margin="112,0,186,0" Grid.Row="4" TextWrapping="Wrap" Text="Temperature:" VerticalAlignment="Top" Height="40"/>
         <TextBlock x:Name="humidityBlock" Foreground ="pink" FontSize="25" Margin="112,26,0,0" Grid.Row="4" TextWrapping="Wrap" Text="Humidity:" VerticalAlignment="Top" Grid.RowSpan="2" HorizontalAlignment="Left" Width="129"/>
         <TextBlock x:Name="tempscreenBlock" HorizontalAlignment="Left" Margin="401,10,0,0" Grid.Row="4" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="30" Width="74" />

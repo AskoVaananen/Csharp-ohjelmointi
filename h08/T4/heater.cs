@@ -17,7 +17,7 @@ namespace T4
             get { return temperature; }
             set
             {
-                if (value <= 120 && value >= 0)
+                if (value <= 120 && value >= 0) // value is limited to 0 - 120
                     { temperature = value; }
                 else { temperature = 0; }
             }            
@@ -28,7 +28,7 @@ namespace T4
             get { return humidity; }
             set
             {
-                if (value <= 100 && value >= 0)
+                if (value <= 100 && value >= 0) // limited to 0-100
                 {
                     humidity = value;
                 }

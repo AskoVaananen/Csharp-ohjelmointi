@@ -35,7 +35,7 @@ namespace T4
             eightButton.Click += button_Click;
             nineButton.Click += button_Click;
             zeroButton.Click += button_Click;
-            dotButton.Click += button_Click;
+            dotButton.Click += buttondot_Click;
 
 
         }
@@ -43,7 +43,7 @@ namespace T4
         private void button_Click(object sender, RoutedEventArgs e)
         {
             double check = double.Parse(screenBox.Text);
-            if (check == 0)
+            if (check == 0) // checking if theres 0 and remove it
             {
                 screenBox.Text = "";
             }
@@ -52,7 +52,7 @@ namespace T4
         }
 
         private void backButton_Click(object sender, RoutedEventArgs e)
-        {
+        { // removing characters and put 0 if theres no characters left
             string value = screenBox.Text;
             value = value.Remove(value.Length - 1);
             if (value.Length == 0)
@@ -68,8 +68,8 @@ namespace T4
 
         private void okButton_Click(object sender, RoutedEventArgs e)
         {
-            heater kiuas = new heater();
-            if ((bool)radioTempButton.IsChecked)
+            heater kiuas = new heater(); // new kiuas from heater.cs
+            if ((bool)radioTempButton.IsChecked) // when temperature is clicked
             {
                 try
                 {
@@ -77,13 +77,13 @@ namespace T4
                     tempscreenBlock.Text = kiuas.Temperature.ToString();
                     if (kiuas.Temperature == 0)
                     {
-                        infoscreenBlock.Text = "Syöttämäsi arvo ei ole 0 ja 100 välillä!";
+                        infoscreenBlock.Text = "Syöttämäsi arvo ei ole 0 ja 120 välillä!";
 
                     }
                 }
                 catch
                 {
-                    infoscreenBlock.Text = "Ei ole numero!";
+                    infoscreenBlock.Text = "Ei ole numero!"; // print to infobox
 
                 }
                 finally
@@ -94,7 +94,7 @@ namespace T4
 
             }
 
-            if ((bool)radioHumButton.IsChecked)
+            if ((bool)radioHumButton.IsChecked) // when humidity is clicked
             {
                 try
                 {
