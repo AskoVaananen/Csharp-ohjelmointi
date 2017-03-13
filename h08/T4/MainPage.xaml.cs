@@ -73,7 +73,7 @@ namespace T4
             if ((bool)radioTempButton.IsChecked) // when temperature radiobutton is active
             {
                 try
-                {
+                {   //values are limited in heater.cs
                     kiuas.Temperature = double.Parse(screenBox.Text);
                     tempscreenBlock.Text = kiuas.Temperature.ToString();
                     if (kiuas.Temperature == 0)
@@ -100,7 +100,7 @@ namespace T4
             if ((bool)radioHumButton.IsChecked) // when humidityradio is active
             {
                 try
-                {
+                {   //values are limited in heater.cs
                     kiuas.Humidity = double.Parse(screenBox.Text);
                     humscreenBlock.Text = kiuas.Humidity.ToString();
                     if (kiuas.Humidity == 0)
