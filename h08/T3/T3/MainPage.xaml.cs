@@ -29,26 +29,29 @@ namespace T3
 
         private void drawButton_Click(object sender, RoutedEventArgs e)
         {
-            // random number from range 1-39
+            // Textbox for rows, used inside scrollviewer and new lotto instance.
             Lotto lotto = new Lotto();
             TextBox LottoBox = new TextBox();
+
+            // LottoBox must accept line-end character to start new line in ti.
             LottoBox.AcceptsReturn = true;
+            //number of rows
             for (int i = 1; i <= int.Parse(drawsTextBox.Text); i++)
-            {
-                int[] numerot = lotto.Generate();
-                foreach (int s in numerot)
+            {   
+                int[] numerot = lotto.Generate(); // generate new row (from lotto class).
+                foreach (int s in numerot) // array to string
                 {
-                    LottoBox.Text += s.ToString() + " ";
+                    LottoBox.Text += s.ToString() + " "; // adding row to lottobox
 
                 }
-                LottoBox.Text += Environment.NewLine;
+                LottoBox.Text += Environment.NewLine; // adds newline
 
-
+                // Lottobox inside scrollviewer.
                 scrollViewer.Content = (LottoBox);
             }
         }
 
-        private void clearButton_Click(object sender, RoutedEventArgs e)
+        private void clearButton_Click(object sender, RoutedEventArgs e) // clear text from lottobox and drawsbox
         {
             drawsTextBox.Text = " ";
             scrollViewer.Content = " ";

@@ -15,17 +15,17 @@ namespace T3
              rand = new Random();
 
         }
-        public int[] Generate()
+        public int[] Generate() // generate new row and return it 
         {
             int check = 0;
           
             int[] lotto = new int[7];
             
             
-            for (int i = 0; i < lotto.Length; )
+            for (int i = 0; i < lotto.Length; ) //generate seven random integers between 1-40
             {
-                check = rand.Next(1, 41);
-                while (!(lotto.Contains(check)))
+                check = rand.Next(1, 40); 
+                while (!(lotto.Contains(check))) // if there is duplicate integer, generate again.
                 {
                     lotto[i] = check;
                     i++;
@@ -40,12 +40,13 @@ namespace T3
             
                 
             }
-        public void PrintData()
+        /*public void PrintData()
         {
 
 
 
         }
+        */
 
         }
 

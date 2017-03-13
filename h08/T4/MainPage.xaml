@@ -1,0 +1,81 @@
+﻿<Page
+    x:Class="T4.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:T4"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="infoBlock" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="500" />
+            <ColumnDefinition Width="280" />
+            <ColumnDefinition Width="500"/>
+
+
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+
+        </Grid.RowDefinitions>
+        <TextBox Name="screenBox" Height="30" Width="335"  TextAlignment="Right" Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="1" Margin="20,5,0,10" Text="0" HorizontalAlignment="Left"/>
+        <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="1" Margin="0,0,0,0" Grid.ColumnSpan="2">
+
+            <Button x:Name="sevenButton" Background="lightgreen" Content="7" Height="30" Width="70"  Margin="20,10,0,0" />
+            <Button x:Name="eightButton" Background="lightgreen" Content="8" Height="30" Width="70" Margin="20,10,0,0" />
+            <Button x:Name="nineButton" Background="lightgreen" Content="9" Height="30" Width="70" Margin="20,10,0,0" />
+
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="2" Margin="0,0,0,0" Grid.ColumnSpan="2">
+            <Button x:Name="fourButton" Background="lightgreen"  Content="4" Height="30" Width="70" Margin="20,10,0,0" />
+            <Button x:Name="fiveButton" Background="lightgreen" Content="5" Height="30" Width="70" Margin="20,10,0,0" />
+            <Button x:Name="sixButton" Background="lightgreen" Content="6" Height="30" Width="70" Margin="20,10,0,0" />
+
+
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="3" Margin="0,0,0,0" Grid.ColumnSpan="2">
+
+            <Button x:Name="oneButton" Background="lightgreen"  Content="1" Height="30" Width="70" Margin="20,10,0,0" />
+            <Button x:Name="twoButton" Background="lightgreen" Content="2" Height="30" Width="70" Margin="20,10,0,0" />
+            <Button x:Name="threeButton" Background="lightgreen" Content="3" Height="30" Width="70" Margin="20,10,0,0" />
+
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="4" Margin="0,0,0,0" Grid.ColumnSpan="2">
+
+            <Button x:Name="zeroButton" Background="lightgreen" Content="0" Height="30" Width="160" Margin="20,10,0,0" />
+            <Button x:Name="dotButton" Background="lightgreen" Content="." Height="30" Width="70" Margin="20,10,0,0" />
+
+
+        </StackPanel>
+        <RelativePanel HorizontalAlignment="Left"  Grid.Column="2" Margin="5,15,0,5" Width="70" Grid.Row="1" Grid.RowSpan="4">
+
+            <Button x:Name="backButton" Background="lightgreen" Content="&lt;-" Height="30" Width="70" Margin="0,0,0,0" Click="backButton_Click" />
+            <Button x:Name="okButton" Background="lightgreen" Content="ok" RelativePanel.Below="backButton" Height="150" Width="70" Margin="0,20,0,0" Click="okButton_Click" />
+
+
+
+
+        </RelativePanel>
+        <RadioButton x:Name="radioTempButton" Content="Temperature" Grid.Column="1" HorizontalAlignment="Left" Height="29" Margin="40,11,0,0" Grid.Row="5" VerticalAlignment="Top" Width="12"/>
+        <RadioButton x:Name="radioHumButton" Grid.ColumnSpan="2" Content="Humidity" Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="165,11,0,-61" Grid.Row="5" VerticalAlignment="Top"/>
+        <TextBlock x:Name="heaterBlock" Foreground="Brown" FontSize="90" FontFamily="comic sans ms" HorizontalAlignment="Left" Margin="112,0,0,0" TextWrapping="Wrap" Text="HEATER" VerticalAlignment="Top" Height="110" Grid.RowSpan="3" Width="378"/>
+        <TextBlock x:Name="ultimatumBlock" Foreground="Brown" FontSize="40" FontFamily="comic sans ms" HorizontalAlignment="Left" Margin="289,15,0,0" TextWrapping="Wrap" Text="ultimatum" VerticalAlignment="Top" Height="59" Grid.RowSpan="2" Width="201" Grid.Row="2"/>
+        <TextBlock x:Name="temperatureBlock" Foreground ="yellow" FontSize="25" Margin="112,0,186,0" Grid.Row="4" TextWrapping="Wrap" Text="Temperature:" VerticalAlignment="Top" Height="40"/>
+        <TextBlock x:Name="humidityBlock" Foreground ="pink" FontSize="25" Margin="112,26,0,0" Grid.Row="4" TextWrapping="Wrap" Text="Humidity:" VerticalAlignment="Top" Grid.RowSpan="2" HorizontalAlignment="Left" Width="129"/>
+        <TextBlock x:Name="tempscreenBlock" HorizontalAlignment="Left" Margin="401,10,0,0" Grid.Row="4" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="30" Width="74" />
+        <TextBlock x:Name="humscreenBlock" Margin="401,40,54,0" Grid.Row="4" Grid.RowSpan="2" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="25"/>
+        <TextBlock x:Name="infoscreenBlock" Grid.Column="1" HorizontalAlignment="Left" Margin="10,60,0,-45" Grid.Row="5" TextWrapping="Wrap" Text="Info: set values and click ok!" VerticalAlignment="Top" Height="35" Width="191"/>
+
+
+
+    </Grid>
+</Page>
