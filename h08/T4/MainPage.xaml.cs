@@ -25,7 +25,7 @@ namespace T4
         public MainPage()
         {
             this.InitializeComponent();
-            // click events for every button.
+            // click events for every button, dont need to do it in xaml.
             oneButton.Click += button_Click;
             twoButton.Click += button_Click;
             threeButton.Click += button_Click;
@@ -78,7 +78,7 @@ namespace T4
                     tempscreenBlock.Text = kiuas.Temperature.ToString();
                     if (kiuas.Temperature == 0)
                     {
-                        infoscreenBlock.Text = "Syöttämäsi arvo ei ole 0 ja 120 välillä!";
+                        infoscreenBlock.Text = "Syöttämäsi luku ei ole 0 ja 120 välillä!";
 
                     }
                 }
